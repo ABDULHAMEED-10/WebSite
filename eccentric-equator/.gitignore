@@ -22,3 +22,21 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# vscode setting folder
+.vscode/
+
+# node.js setting folder
+node_modules/
+
+# pnpm setting folder
+.pnpm/
+
+# yarn setting folder
+.yarn/
+
+# npm setting folder
+.npm/
+
+# pnpm store folder
+pnpm-store/
