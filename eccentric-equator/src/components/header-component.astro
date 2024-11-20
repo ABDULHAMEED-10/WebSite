@@ -1,0 +1,29 @@
+---
+const navLinks = [
+  { href: '#services', text: 'Services' },
+  { href: '#contact', text: 'Contact' },
+  { href: 'https://aylestonekings.webbooker.icabbi.com/', text: 'Book Now', primary: true }
+];
+---
+
+<header class="fixed w-full bg-brand-navy text-white py-4 z-50">
+  <nav class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+    <a href="/" class="text-2xl font-proxima-bold">
+      aylestone taxis
+    </a>
+    <div class="hidden md:flex items-center gap-4">
+      {navLinks.map(link => (
+        <a
+          href={link.href}
+          class={`px-6 py-2 rounded transition-colors ${
+            link.primary 
+              ? 'bg-brand-coral hover:bg-opacity-90' 
+              : 'hover:bg-brand-turquoise'
+          }`}
+        >
+          {link.text}
+        </a>
+      ))}
+    </div>
+  </nav>
+</header>

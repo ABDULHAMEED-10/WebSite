@@ -1,0 +1,44 @@
+---
+const services = [
+  {
+    title: "Local Taxi Service",
+    description: "Professional and reliable local taxi service in Leicester",
+    buttonText: "Book Now"
+  },
+  {
+    title: "Courier Service",
+    description: "Nationwide same-day delivery services",
+    buttonText: "Book Delivery"
+  },
+  {
+    title: "Business Accounts",
+    description: "Special rates and convenient billing for business customers",
+    buttonText: "Apply Now",
+    link: "mailto:info@aylestone-taxis.co.uk"
+  }
+];
+---
+
+<section id="services" class="py-20">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-proxima-bold text-center text-brand-navy mb-12">
+      Our Services
+    </h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      {services.map(service => (
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+          <h3 class="text-xl font-proxima-bold text-brand-navy mb-4">
+            {service.title}
+          </h3>
+          <p class="mb-6">{service.description}</p>
+          <a
+            href={service.link || "https://aylestonekings.webbooker.icabbi.com/"}
+            class="inline-block bg-brand-turquoise text-white px-6 py-2 rounded hover:bg-opacity-90 transition-colors"
+          >
+            {service.buttonText}
+          </a>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

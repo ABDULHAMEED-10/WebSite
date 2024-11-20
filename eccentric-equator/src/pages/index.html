@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aylestone Taxis - Professional Taxi Service in Leicester</title>
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <script src="./src/Js/scripts.js" defer></script>
+    
+</head> 
+<body>
+    <div class="cookie-banner" id="cookieBanner">
+        This website uses cookies to improve user experience. By using our website you consent to all cookies in accordance with our Cookie Policy. 
+        <button onclick="document.getElementById('cookieBanner').style.display='none'" class="button primary-button">Accept</button>
+    </div>
+
+    <header class="header">
+        <nav class="nav">
+            <a href="" class="logo">Aylestone Taxis</a>
+            <div class="nav-links">
+                <a href="#services" class="button secondary-button">Services</a>
+                <a href="#contact" class="button secondary-button">Contact</a>
+                <a href="https://aylestonekings.webbooker.icabbi.com/" class="button primary-button">Book Now</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Professional Taxi Service in Leicester</h1>
+        <p>Your reliable transport partner for local and nationwide journeys</p>
+        <div class="cta-buttons">
+            <a href="tel:01162338888" class="button primary-button">Call Us: 0116 233 8888</a>
+            <a href="https://aylestonekings.webbooker.icabbi.com/" class="button secondary-button">Book Online</a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-card ">
+                <h3>Local Taxi Service</h3>
+                <p>Professional and reliable local taxi service in Leicester</p>
+                <a href="https://aylestonekings.webbooker.icabbi.com/" class="button primary-button">Book Now</a>
+            </div>
+            <div class="service-card">
+                <h3>Courier Service</h3>
+                <p>Nationwide same-day delivery services</p>
+                <a href="https://aylestonekings.webbooker.icabbi.com/" class="button primary-button">Book Delivery</a>
+            </div>
+            <div class="service-card">
+                <h3>Business Accounts</h3>
+                <p>Special rates and convenient billing for business customers</p>
+                <a href="mailto:info@aylestone-taxis.co.uk" class="button primary-button">Apply Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Policy Containers -->
+    <div id="privacy-policy" class="policy-container">
+        <div class="policy-content">
+            <button class="close-policy" onclick="closePolicy('privacy-policy')">Close</button>
+            <h1>Privacy Policy</h1>
+            <!-- Privacy Policy content from policies/privacy.html -->
+        </div>
+    </div>
+
+    <div id="gdpr-policy" class="policy-container">
+        <div class="policy-content">
+            <button class="close-policy" onclick="closePolicy('gdpr-policy')">Close</button>
+            <h1>GDPR Policy</h1>
+            <!-- GDPR Policy content from policies/gdpr.html -->
+        </div>
+    </div>
+
+    <div id="cookie-policy" class="policy-container">
+        <div class="policy-content">
+            <button class="close-policy" onclick="closePolicy('cookie-policy')">Close</button>
+            <h1>Cookie Policy</h1>
+            <!-- Cookie Policy content from policies/cookie.html -->
+        </div>
+    </div>
+
+    <div class="toggle-menu" onclick="document.querySelector('.toggle-options').classList.toggle('active')">
+        Menu
+    </div>
+
+    <div class="toggle-options">
+        <a href="icab.bi/Aylestonetaxi" class="button secondary-button">Download App</a>
+        <a href="https://aylestonekings.webbooker.icabbi.com/" class="button secondary-button">Book Online</a>
+        <a href="tel:01162338888" class="button secondary-button">Call Office</a>
+    </div>
+
+    <footer class="footer" id="contact">
+        <div class="footer-content">
+            <div>
+                <h3>Contact Us</h3>
+                <p>753A Aylestone Road</p>
+                <p>Leicester, LE2 8TG</p>
+                <p>Email: info@aylestone-taxis.co.uk</p>
+                <p>Tel: 0116 233 8888</p>
+                <p>WhatsApp: 07535 855786</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <p><a href="#" onclick="showPolicy('privacy-policy')">Privacy Policy</a></p>
+                <p><a href="#" onclick="showPolicy('gdpr-policy')">GDPR Policy</a></p>
+                <p><a href="#" onclick="showPolicy('cookie-policy')">Cookie Policy</a></p>
+                <p><a href="https://aylestonekings.webbooker.icabbi.com/">Book Online</a></p>
+            </div>
+            <div>
+                <h3>Business Hours</h3>
+                <p>24/7 Service Available</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Aylestone Taxis. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
